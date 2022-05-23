@@ -5,10 +5,10 @@ Model not compiled here, instead will be done externally to make it
 easy to test various loss functions and optimizers.
 """
 
-from keras.models import Model
-from keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, concatenate, Conv2DTranspose, BatchNormalization, \
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, concatenate, Conv2DTranspose, BatchNormalization, \
     Dropout, Lambda
-from keras import backend as K
+from tensorflow.keras import backend as K
 
 
 def jacard_coef(y_true, y_pred):
